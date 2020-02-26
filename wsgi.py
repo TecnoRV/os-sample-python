@@ -5,7 +5,7 @@ application = Flask(__name__)
 def hello():
     return "Hello World!, this is my first Python Application"
 
-@application.route("/hello")
+@application.route("/hello", methods=['GET'])
 def helloTest():
     return "Hello World!, this is my first Python Application in Docker"
 
